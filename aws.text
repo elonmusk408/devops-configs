@@ -2,5 +2,12 @@ https://www.trinimbus.com/blog/the-importance-of-implementing-ci-cd-pipelines-on
 
 https://docs.aws.amazon.com/codebuild/latest/userguide/jenkins-plugin.html
 https://www.youtube.com/watch?v=b50k35Dh4xc
+https://searchaws.techtarget.com/tip/Compare-AWS-CodePipeline-vs-Jenkins-for-CI-CD          -->cost
 
 https://docs.aws.amazon.com/codebuild/latest/userguide/sample-runtime-versions.html         runtime versions buildspec.yml
+
+
+
+They both are CI/CD tools that let you automate building, testing and deploying projects. 
+The difference is that AWS CodePipeline is a 100% managed serverless solution
+whereas Jenkins is unmanaged service where you are responsible for managing it
