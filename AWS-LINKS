@@ -8,3 +8,10 @@ https://docs.aws.amazon.com/codebuild/latest/userguide/sample-codedeploy.html
 
 imp video
 https://www.youtube.com/watch?v=voWo0hF8mQQ
+
+
+
+Codebuild:
+When you set up your AWS CodeBuild projects to access your VPC, choose private subnets only.
+
+By which they mean, codebuild will only work in a private subnet with NAT.
