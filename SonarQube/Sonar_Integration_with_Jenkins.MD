@@ -13,6 +13,7 @@ Login to Jenkins server and install sonarqube scanner.
 - Package : https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.2.0.1227-linux.zip
 - 
 ```sh 
+step:1 
 # wget https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.2.0.1227-linux.zip
 # unzip sonar-scanner-cli-3.2.0.1227-linux.zip
 # mv sonar-scanner-3.2.0.1227-linux /opt/sonar_scanner 
@@ -23,17 +24,11 @@ Set SonarQube server details in sonar-scanner property file
  - Sonar properties file: /opt/sonar_scanner/conf/sonar-scanner.properties
    - sonar.host.url=http://`<SONAR_SERVER_IP>`:9000
 
-Login to Jenkins GUI console and install " SonarQube scanner" plugin
+2. Login to Jenkins GUI console and install " SonarQube scanner" plugin
 
  - `Manage Jenkins` > `Manage Plugins` > `Avalable` > `SonarQube scanner` 
-
-Configure SonarQube scanner home path
-
-- `Manage Jenkins` > `Global Tool Configuration` > `SonarQube Scanner` 
-   - Name  : `sonar_scanner`
-   - SONAR_RUNNER_HOME : `/opt/sonar_scanner`  
-
-Configure SonarQube server name and authentication token 
+ 
+ 3.    Configure SonarQube server name and authentication token 
 - `Manage Jenkins` > `Configure Systems` > `SonarQube Servers`
     - Name : `SonarQube`
 	- ServerURL : `http://<Sonarqube_server>:9000/sonar`
@@ -41,7 +36,15 @@ Configure SonarQube server name and authentication token
 To Get Authentication code follow below steps.
 	Login to SonarQube server as a admin  `My Account` > `Security` > `Generate Token`
 
-Create a job to test SonarQube. Provide below sonar properties details in the job under build 
+4.   Configure SonarQube scanner home path
+
+- `Manage Jenkins` > `Global Tool Configuration` > `SonarQube Scanner` 
+   - Name  : `sonar_scanner`
+   - SONAR_RUNNER_HOME : `/opt/sonar_scanner`  
+
+
+
+5. Create a job to test SonarQube. Provide below sonar properties details in the job under build 
 - Build:
   - `Execute SonarQube Scanner` > `Analysis properties`  (it is mandatary).  
      - sonar.projectKey=`Srasan`
