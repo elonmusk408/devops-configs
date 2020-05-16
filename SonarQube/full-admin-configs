@@ -1,1 +1,11 @@
 https://www.digitalocean.com/community/tutorials/how-to-ensure-code-quality-with-sonarqube-on-ubuntu-18-04
+Install sonar qube:
+1. downlaod sonar qube
+2.cd bin 
+  ./sonar start 
+ 
+ launch: 
+   <ipaddres:9000>
+   
+3. install sonar scanner: 
+   wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.2.0.1227-linux.zip
