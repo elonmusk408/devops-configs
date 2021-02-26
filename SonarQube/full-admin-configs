@@ -9,3 +9,11 @@ Install sonar qube:
    
 3. install sonar scanner: 
    wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.2.0.1227-linux.zip
+   
+   
+   
+  token : shared: a071e661e410da5428d4530f084cab53de56abe9
+  
+  
+   
+   
